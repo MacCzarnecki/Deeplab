@@ -42,7 +42,7 @@ class COCOSegmentation(Dataset):
 
         if self.split == "train":
             return self.transform_tr(sample)
-        elif self.split == 'val':
+        elif self.split == 'validate':
             return self.transform_val(sample)
 
     def _make_img_gt_point_pair(self, index):
